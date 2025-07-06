@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prime Land Listings - Your Investment Awaits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f7fa, #e8f0ec);
+      color: #2b2b2b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, #43a047, #1b5e20);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2.7em;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .navigation {
+      background: #ffffffd9;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #2e7d32;
+      padding: 12px 24px;
+      margin: 0 12px;
+      background: rgba(232, 245, 233, 0.8);
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid #c8e6c9;
+    }
+
+    .navigation a:hover {
+      background-color: #c8e6c9;
+      color: #1b5e20;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .plot-listing {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plot-listing:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+    }
+
+    .plot-listing h2 {
+      color: #1b5e20;
+      margin-top: 0;
+      font-size: 2em;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    .plot-listing p {
+      font-size: 1.05em;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .plot-listing strong {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      background: linear-gradient(to right, #1b5e20, #43a047);
+      color: #fff;
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: background 0.3s ease;
+    }
+
+    .contact-info p:hover {
+      background: #2e7d32;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 60px;
+      font-size: 1em;
+    }
+
+    #whatsapp-chat {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    #whatsapp-chat:hover {
+      transform: scale(1.1);
+    }
+
+    #whatsapp-chat img {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .plot-listing {
+        padding: 25px;
+      }
+
+      .navigation a {
+        padding: 10px 15px;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Company Logo" class="logo">
+    <h1>Explore Premium Land Opportunities</h1>
+  </header>
+
+  <div class="navigation">
+    <a href="#ruaka">Ruaka Plots</a>
+    <a href="#kamakis">Kamakis Plots</a>
+    <a href="#other">Other Listings</a>
+  </div>
+
+  <div class="container">
+    <div class="plot-listing" id="ruaka">
+      <h2>Commercial Plot for Sale - Ruaka</h2>
+      <div class="image-grid">
+        <img src="ruaka1.jpg" alt="Ruaka Plot 1">
+        <img src="ruaka2.jpg" alt="Ruaka Plot 2">
+        <img src="ruaka3.jpg" alt="Ruaka Plot 3">
+        <img src="your-image.jpg" alt="Additional Ruaka Plot">
+      </div>
+      <p><strong>Size:</strong> 69 x 60 ft, directly accessible from tarmac.</p>
+      <p><strong>Services:</strong> Two access roads, complete sewer, power, and water infrastructure on site.</p>
+      <p><strong>Suitability:</strong> Ideal for constructing high-rise apartments or commercial complexes.</p>
+      <p><strong>Asking Price:</strong> 17 Million</p>
+      <div class="contact-info">
+        <p>Contact us now: 0722 827890</p>
+      </div>
+    </div>
+
+    <div class="plot-listing" id="kamakis">
+      <h2>Commercial Plot for Sale - Kamakis Corner</h2>
+      <div class="image-grid">
+        <img src="kamakis1.jpg" alt="Kamakis Plot 1">
+        <img src="kamakis2.jpg" alt="Kamakis Plot 2">
+      </div>
+      <video src="kamakisvideo.mp4" controls></video>
+      <p><strong>Size:</strong> 72 x 66 ft, only 60 meters from the main tarmac road.</p>
+      <p><strong>Location:</strong> Strategically positioned between Total and Shell petrol stations, adjacent to Jujys Mahogany and behind Kwa Guka.</p>
+      <p><strong>Suitability:</strong> Perfect for developing apartment buildings or a large storage godown. All essential amenities are readily available.</p>
+      <p><strong>Asking Price:</strong> 14 Million</p>
+      <div class="contact-info">
+        <p>Call to schedule a viewing: 0722 827890</p>
+      </div>
+    </div>
+
+    <div class="plot-listing" id="other">
+      <h2>Other Listings</h2>
+      <p>More land listings coming soon!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Prime Land Listings. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/254722827890" target="_blank" id="whatsapp-chat">
+    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="Chat on WhatsApp">
+  </a>
+<script src="index.js"></script>
+</body>
+</html>
